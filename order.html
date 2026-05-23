@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order | The Corner Café</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <h2 class="logo">The Corner Café</h2>
+
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="cart.html">Cart</a>
+        <a href="location.html">Location</a>
+    </nav>
+
+</header>
+
+<div class="order-page">
+
+    <div class="order-box">
+
+        <h1>Complete Your Order ☕</h1>
+
+        <input type="text"
+        id="customerName"
+        placeholder="Enter Your Name">
+
+        <input type="text"
+        id="customerPhone"
+        placeholder="Enter Phone Number">
+
+        <textarea
+        id="customerAddress"
+        placeholder="Enter Delivery Address"></textarea>
+
+        <h3>Select Payment Method</h3>
+
+        <div class="payment-options">
+
+            <label>
+                <input type="radio"
+                name="payment"
+                value="Cash On Delivery"
+                checked>
+
+                Cash On Delivery
+            </label>
+
+            <label>
+                <input type="radio"
+                name="payment"
+                value="Online Payment">
+
+                Online Payment
+            </label>
+
+        </div>
+
+        <div class="total-row">
+
+            <span>Total Amount</span>
+
+            <span id="finalTotal">₹0</span>
+
+        </div>
+
+        <button id="finalPlaceOrderBtn">
+            Confirm Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
